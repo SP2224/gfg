@@ -7,7 +7,7 @@ import java.io.IOException;
 public class gfg1 {
 	public static void main(String[] args) throws IOException
 	{
-		FileReader fr = new FileReader("E:\\eclipse workspace\\gfg java\\src\\reader\\file2.txt");
+		FileReader fr = new FileReader("E:\\eclipse workspace\\gfg java\\src\\reader\\file.txt");
 		BufferedReader br = new BufferedReader(fr);
 		char c[] = new char[20];
 		if(br.markSupported()) {
@@ -20,12 +20,12 @@ public class gfg1 {
 			br.read(c);
 			for(int i=0;i<20;i++)
 			{
-				System.out.println(c[i]);
+				System.out.print(c[i]);
 			}
 			System.out.println();
 			br.reset();
 			for(int i=0;i<8;i++) {
-				System.out.println((char)br.read());
+				System.out.print((char)br.read());
 			}
 		}
 	}
